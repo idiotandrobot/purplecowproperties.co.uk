@@ -21,8 +21,7 @@ Purple Cow Properties have created a range of services around the individual nee
 - Worried that your agent does not understand your investment strategy ?
 - Confused by fees and what you are paying your agent for?
 - Frustrated by a lack of communication from your agent?
-- Purple Cow Properties value trust and communication and are here to work efficiently, competently and cost effectively for you THE CLIENT.
-- ARLA accredited in an unregulated industry!
+- Purple Cow Properties value trust and communication and are here to work efficiently, competently and cost 
 - Directors ethos is based on their experiences as a property investor and a letting agent.
 - Full range of services available to select, as required at agreed prices.
 - Client access to senior management for any queries or discussions.
