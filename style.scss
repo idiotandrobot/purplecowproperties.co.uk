@@ -17,10 +17,14 @@ html {
 body {
   background: $black;
   font: 16px/1.2 $helvetica;
-  color: $gray;
+  color: $lightGray;
 }
 
-.background { background:url(../images/background-default.jpg) no-repeat; }
+.background { 
+  background:url(../images/background-home.jpg) no-repeat; 
+  max-width: 740px;
+  width: 100%;
+}
 
 .container {
   margin: 0 auto;
