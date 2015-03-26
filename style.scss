@@ -17,7 +17,7 @@ html {
 body {
   background: $black;
   font: 16px/1.2 $helvetica;
-  color: $gray;
+  color: $lightGray;
 }
 
 .background { 
@@ -45,7 +45,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $lightGray;
+  color: $lighterGray;
   
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -148,7 +148,7 @@ img {
 
 .masthead {
   padding: 35px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $lighterGray;
   
   @include mobile {
     text-align: center;
@@ -184,7 +184,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $lightGray;
+  color: $lighterGray;
   cursor: pointer;
   font-family: $helveticaNeue; 
   font-weight: 300;
@@ -217,14 +217,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $lightGray;
+    color: $lighterGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $lightGray;
+      color: $lighterGray;
     }
   }
 }
