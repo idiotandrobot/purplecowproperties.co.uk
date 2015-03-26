@@ -1,5 +1,6 @@
 ---
 layout: page
+title: about us
 permalink: /about/
 ---
 Purple Cow Properties was created through the dynamic partnership of an experienced Property Investor and a proactive Manchester based Lettings Manager.

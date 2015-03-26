@@ -1,5 +1,6 @@
 ---
 layout: page
+title: our services
 permalink: /services/
 ---
 Purple Cow Properties is a residential Lettings and Property Management Company operating throughout Greater Manchester.
