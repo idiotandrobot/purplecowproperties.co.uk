@@ -15,8 +15,8 @@ html {
 }
 
 body {
-  background: $darkerGray;
-  font: 18px/1.4 $helvetica;
+  background: $black;
+  font: 16px/1.2 $helvetica;
   color: $white;
 }
 
@@ -177,7 +177,7 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 28px; // @TODO: Vertically middle align
   font-family: $helveticaNeue; 
   font-size: 18px;
   
@@ -197,7 +197,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $purple;
     }
   }
 }
@@ -206,7 +206,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $darkGray;
+  background-color: $darkerGray;
 }
 
 footer {
