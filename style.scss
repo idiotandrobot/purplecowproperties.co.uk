@@ -3,6 +3,7 @@
 //
 // IMPORTS
 //
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
 @import "_reset";
 @import "_variables";
 
@@ -228,6 +229,8 @@ nav {
     }
   }
 }
+
+.phone:before { content: "\f095" }
 
 .wrapper-footer {
   margin-top: 50px;
