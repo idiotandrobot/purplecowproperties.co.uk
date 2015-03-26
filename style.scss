@@ -20,6 +20,8 @@ body {
   color: $gray;
 }
 
+.background { background:url(../images/background-default.jpg) no-repeat; }
+
 .container {
   margin: 0 auto;
   max-width: 740px;
