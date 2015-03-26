@@ -16,6 +16,8 @@ url: http://purplecowproper.com/
 
 baseurl: ""
 
+markdown: kramdown
+
 sass:
   sass_dir: _scss
   style: :expanded # You might prefer to minify using :compressed
