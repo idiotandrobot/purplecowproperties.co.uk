@@ -47,7 +47,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $lightGray;
-  font-weight: bold;
   
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -145,11 +144,11 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 }
 
 .masthead {
-  padding: 35px 0;
+  padding: 25px 0;
   border-bottom: 1px solid $lightGray;
   
   @include mobile {
