@@ -3,26 +3,7 @@
 //
 // IMPORTS
 //
-
-//
-// VARIABLES
-//
-
-// Colours
-$blue: #4183C4; 
-$purple: #4b2e8e;
-
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
-
-// Fonts
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+@import "_variables";
 
 /**************/
 /* BASE RULES */
@@ -33,7 +14,7 @@ html {
 }
 
 body {
-	background: $darkergray;
+	background: $darkerGray;
   font: 18px/1.4 $helvetica;
   color: $white;
 }
