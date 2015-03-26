@@ -1,11 +1,26 @@
----
-layout: default
----
+{% include head.html %}
 
-<div class="projects">
-  <ul>
-    <li><img alt="" src="/images/img1.png" width="161" height="115" /></li>
-    <li><img alt="" src="/images/img2.png" width="161" height="115" /></li>
-    <li><img alt="" src="/images/img3.png" width="161" height="115" /></li>
-  </ul>
-</div>
+<body>
+  <div class="background-home">
+  
+    {% include masthead.html %}
+
+      <div id="main" role="main" class="container">
+        <div class="projects">
+          <ul>
+            <li><img alt="" src="/images/img1.png" width="161" height="115" /></li>
+            <li><img alt="" src="/images/img2.png" width="161" height="115" /></li>
+            <li><img alt="" src="/images/img3.png" width="161" height="115" /></li>
+          </ul>
+        </div>
+      </div>
+    
+    </div>
+    
+    {% include footer.html %}
+    
+</body>
+
+</html>
+
+

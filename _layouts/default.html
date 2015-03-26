@@ -1,43 +1,11 @@
 <html>
 
-<head>
-
-	<meta charset="utf-8">
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-  
-	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
-
-	{% capture description %}
-		{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
-	{% endcapture %}
-	<meta name="description" content="{{ description }}">
-  
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  
-</head>
+{% include head.html %}
 
 <body>
   <div class="background">
   
-    <div class="wrapper-masthead">
-        <div class="container">
-          <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-            
-            <div class="site-info">
-              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-              <p class="site-description">{{ site.description }}</p>
-            </div>
-            
-            <nav>
-              <a href="{{ site.baseurl }}/">home</a>
-              <a href="{{ site.baseurl }}/about">about</a>
-              <a href="{{ site.baseurl }}/services">services</a>
-            </nav>
-          </header>
-        </div>
-      </div>
+    {% include masthead.html %}
 
       <div id="main" role="main" class="container">
         {{ content }}
@@ -45,16 +13,7 @@
     
     </div>
     
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% if site.contact.email %}<a href="mailto:{{ site.contact.email }}" >{% include contact/email.html %}</a>{% endif %}
-          {% if site.contact.facebook %}<a href="http://facebook.com/{{ site.contact.facebook }}" target="_blank">{% include contact/facebook.html %}</a>{% endif %}
-          {% if site.contact.linkedin %}<a href="http://linkedin.com/company/{{ site.contact.linkedin }}" target="_blank">{% include contact/linkedin.html %}</a>{% endif %}
-          {% if site.contact.twitter %}<a href="http://twitter.com/{{ site.contact.twitter }}" target="_blank">{% include contact/twitter.html %}</a>{% endif %}        
-        </footer>
-      </div>
-    </div>
+    {% include footer.html %}
     
 </body>
 

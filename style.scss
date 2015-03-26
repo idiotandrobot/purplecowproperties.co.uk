@@ -28,6 +28,15 @@ body {
   width: 100%;
 }
 
+.background-home { 
+  background:url(../images/background-home.jpg) no-repeat; 
+  margin: 0 auto;
+  max-width: 1455px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+
 .container {
   margin: 0 auto;
   max-width: 740px;
@@ -114,6 +123,18 @@ strong, b {
 
 img {
   max-width: 100%;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
 
 /*********************/
@@ -205,7 +226,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $purple;
+      color: $lightGray;
     }
   }
 }
