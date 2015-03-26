@@ -1,8 +1,6 @@
 
 name: Purple Cow Properties
-
 description: Don't follow the herd
-
 avatar: http://purplecowproper.com/images/logo-default.png
 
 contact:
@@ -21,3 +19,6 @@ markdown: kramdown
 sass:
   sass_dir: _scss
   style: :expanded # You might prefer to minify using :compressed
+  
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
