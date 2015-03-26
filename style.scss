@@ -17,7 +17,7 @@ html {
 body {
   background: $black;
   font: 16px/1.2 $helvetica;
-  color: $lightGray;
+  color: $gray;
 }
 
 .background { 
@@ -143,11 +143,11 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .masthead {
-  padding: 5px 0;
+  padding: 35px 0;
   border-bottom: 1px solid $lightGray;
   
   @include mobile {
