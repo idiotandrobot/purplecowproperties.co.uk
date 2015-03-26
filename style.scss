@@ -14,7 +14,7 @@ html {
 }
 
 body {
-	background: $darkerGray;
+  background: $darkerGray;
   font: 18px/1.4 $helvetica;
   color: $white;
 }
@@ -68,7 +68,7 @@ p {
 a {
   color: $white;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $purple;
   }
