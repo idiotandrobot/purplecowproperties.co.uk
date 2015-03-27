@@ -7,20 +7,11 @@ permalink: /testimonials/
   {% for testimonial in site.testimonials %}
     <article class="testimonial">    
       
-      {% if testimonial.external-url %}
-        <h1><a href="{{ testimonial.external-url }}">{{ testimonial.title }}</a></h1>
         <div class="entry">
           {{ testimonial.content }}
-          <span class="read-more"><b>External Link</b></span>
         </div>
-      {% else %}
-        <h1><a href="{{ site.baseurl }}{{ testimonial.url }}">{{ testimonial.title }}</a></h1>
-        <div class="entry">
-          {{ testimonial.content | truncatewords:40}}
-          <a href="{{ site.baseurl }}{{ testimonial.url }}" class="read-more">Read More</a>
-        </div>
-      {% endif %}
-
+        <h3>{{ testimonial.title }}</h3>
+        
     </article>
   {% endfor %}
 </div>
