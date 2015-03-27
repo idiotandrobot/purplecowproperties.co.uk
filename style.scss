@@ -199,11 +199,15 @@ header {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  
+  @include mobile {
+    visibility: collapse;
+  }
 }
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $purple;
+  color: $lightGray;
   font-size: 16px;
   
   @include mobile {
@@ -240,11 +244,19 @@ nav {
 .contact {
   float: right;
   color: $purple;
+  
+  @include mobile {
+      float: none;
+    }
 }
 
 .phone {
   font-size: 36px;
   color: $white;
+  
+  @include mobile {
+    font-size: 24px;
+  }
 }
 
 .phone:before { 
@@ -256,6 +268,10 @@ nav {
 
 .email {
   font-size: 18px;
+  
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 .email:before { 
@@ -263,6 +279,26 @@ nav {
   content: "\f0e0";
   margin-right: 10px;  
 }
+
+.menu-home .home,
+.menu-home .about,
+.menu-home .services,
+.menu-home .testimonials {
+    display: inline-block;
+    width: 380px;
+    height: 180px;
+    padding: 0 10px;
+    
+  @include mobile {
+    width: 170px;
+    height: 140px;
+  }
+}
+
+.menu-home .home { background: url(../images/home-link.png) no-repeat; }
+.menu-home .about { background: url(../images/about-link.png) no-repeat; }
+.menu-home .services { background: url(../images/services-link.png) no-repeat; }
+.menu-home .testimonials { background: url(../images/testimonials-link.png) no-repeat; }
 
 .wrapper-footer {
   margin-top: 50px;
