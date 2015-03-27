@@ -139,9 +139,16 @@ img {
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
-//
-// .masthead
-//
+.wrapper-header {
+  border-top: 1px solid $lighterGray;
+  border-bottom: 1px solid $lighterGray;
+  background-color: $darkerGray;
+}
+
+header {
+  padding: 10px 0;
+  text-align: center;
+}
 
 .wrapper-masthead {
   margin-bottom: 5px;
@@ -150,6 +157,7 @@ img {
 .masthead {
   padding: 35px 0;
   border-bottom: 1px solid $lighterGray;
+  text-align: left;
   
   @include mobile {
     text-align: center;
@@ -236,13 +244,15 @@ nav {
 }
 
 .phone {
-  font-size: 24px;
+  font-size: 36px;
+  color: $white;
 }
 
 .phone:before { 
-  font: 1.4em FontAwesome;
+  font: 1.2em FontAwesome;
   content: "\f095";
-  margin-right: 5px;  
+  margin-right: 10px;  
+  color: $purple;
 }
 
 .email {
@@ -252,17 +262,17 @@ nav {
 .email:before { 
   font: 1.4em FontAwesome;
   content: "\f0e0";
-  margin-right: 5px;  
+  margin-right: 10px;  
 }
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid $lighterGray;
+  border-bottom: 1px solid $lighterGray;
   background-color: $darkerGray;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
 }
