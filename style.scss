@@ -195,7 +195,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $purple;
   font-size: 16px;
   
   @include mobile {
@@ -230,11 +230,13 @@ nav {
   }
 }
 
-.phone {
+.contact {
   float: right;
-  vertical-align: center;
+  color: $purple;
+}
+
+.phone {
   font-size: 24px;
-  color: $white;
 }
 
 .phone:before { 
@@ -244,8 +246,7 @@ nav {
 }
 
 .email {
-  float: right;
-  vertical-align: center;
+  font-size: 18px;
 }
 
 .email:before { 
@@ -253,7 +254,6 @@ nav {
   content: "\f0e0";
   margin-right: 5px;  
 }
-
 
 .wrapper-footer {
   margin-top: 50px;
