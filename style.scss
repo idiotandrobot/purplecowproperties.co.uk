@@ -296,11 +296,26 @@ nav {
     display: inline-block;
     width: 365px;
     height: 180px;
-    padding: 0 10px;
-    
-  @include mobile {
+    padding: 0 10px;   
+}
+@media screen and (max-width: 800px) {
+  .content .home,
+  .content .about,
+  .content .services,
+  .content .testimonials  { 
     width: 165px;
     height: 140px;
+    padding: 1px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .content .home,
+  .content .about,
+  .content .services,
+  .content .testimonials  { 
+    width: 165px;
+    height: 20px;
+    padding: 1px;
   }
 }
 
