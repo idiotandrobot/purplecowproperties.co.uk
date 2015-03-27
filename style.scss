@@ -180,6 +180,12 @@ header {
     border-radius: 5px;
   }
 }
+// Height hack to fix avatar/info spacing glitch
+@media screen and (max-width: 358px) {
+  .site-avatar {
+    height: 30px;
+  }
+}
 
 .site-info {
   float: left;
@@ -285,12 +291,12 @@ nav {
 .menu-home .services,
 .menu-home .testimonials {
     display: inline-block;
-    width: 380px;
+    width: 365px;
     height: 180px;
     padding: 0 10px;
     
   @include mobile {
-    width: 170px;
+    width: 165px;
     height: 140px;
   }
 }
