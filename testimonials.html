@@ -16,7 +16,7 @@ permalink: /testimonials/
       {% else %}
         <h1><a href="{{ site.baseurl }}{{ testimonial.url }}">{{ testimonial.title }}</a></h1>
         <div class="entry">
-          {{ post.content | truncatewords:40}}
+          {{ testimonial.content | truncatewords:40}}
           <a href="{{ site.baseurl }}{{ testimonial.url }}" class="read-more">Read More</a>
         </div>
       {% endif %}
