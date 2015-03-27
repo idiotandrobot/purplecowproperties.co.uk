@@ -231,9 +231,10 @@ nav {
 }
 
 .phone {
-  height: 40px;
+  float: right;
   vertical-align: center;
-  color: $purple;
+  font-size: 24px;
+  color: $white;
 }
 
 .phone:before { 
@@ -243,9 +244,8 @@ nav {
 }
 
 .email {
-  height: 40px;
+  float: right;
   vertical-align: center;
-  color: $purple;
 }
 
 .email:before { 
