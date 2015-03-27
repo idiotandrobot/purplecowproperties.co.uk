@@ -16,6 +16,10 @@ url: http://purplecowproper.com/
 
 baseurl: ""
 
+collections:
+  testimonials:
+    output: true
+
 markdown: kramdown
 
 sass:
