@@ -33,6 +33,7 @@ body {
   background:url(../images/background-home.jpg) no-repeat; 
   margin: 0 auto;
   max-width: 1455px;
+  min-height: 566px;
   padding: 0 10px;
   width: 100%;
 }
@@ -299,22 +300,12 @@ nav {
     padding: 0 10px;   
 }
 @media screen and (max-width: 800px) {
-  .content .home,
-  .content .about,
-  .content .services,
-  .content .testimonials  { 
+  .menu-home .home,
+  .menu-home .about,
+  .menu-home .services,
+  .menu-home .testimonials  { 
     width: 165px;
     height: 140px;
-    padding: 1px;
-  }
-}
-@media screen and (max-width: 395px) {
-  .content .home,
-  .content .about,
-  .content .services,
-  .content .testimonials  { 
-    width: 165px;
-    height: 20px;
     padding: 1px;
   }
 }
@@ -323,9 +314,20 @@ nav {
 .menu-home .about { background: url(../images/about-link.png) no-repeat; }
 .menu-home .services { background: url(../images/services-link.png) no-repeat; }
 .menu-home .testimonials { background: url(../images/testimonials-link.png) no-repeat; }
+@media screen and (max-width: 395px) {
+  .menu-home .home,
+  .menu-home .about,
+  .menu-home .services,
+  .menu-home .testimonials  { 
+    background: none;
+    width: 120px;
+    height: 60px;
+    padding: 1px;
+
+  }
+}
 
 .wrapper-footer {
-  margin-top: 50px;
   border-top: 1px solid $lighterGray;
   border-bottom: 1px solid $lighterGray;
   background-color: $darkerGray;
