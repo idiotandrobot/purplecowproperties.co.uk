@@ -204,7 +204,7 @@ img {
 }
 
 nav {
-  float: right;
+  float: left;
   margin-top: 35px; // @TODO: Vertically middle align
   font-family: $helveticaNeue; 
   font-size: 18px;
@@ -237,10 +237,23 @@ nav {
 }
 
 .phone:before { 
-  font: 1.3em FontAwesome;
+  font: 1.4em FontAwesome;
   content: "\f095";
   margin-right: 5px;  
 }
+
+.email {
+  height: 40px;
+  vertical-align: center;
+  color: $purple;
+}
+
+.email:before { 
+  font: 1.4em FontAwesome;
+  content: "\f0e0";
+  margin-right: 5px;  
+}
+
 
 .wrapper-footer {
   margin-top: 50px;

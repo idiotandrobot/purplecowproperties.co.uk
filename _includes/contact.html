@@ -1,5 +1,2 @@
 {% if site.contact.phone %}<span class="phone">{{ site.contact.phone }}</span>{% endif %}
-{% if site.contact.email %}<a href="mailto:{{ site.contact.email }}" >{% include contact/email.html %}</a>{% endif %}
-{% if site.contact.facebook %}<a href="http://facebook.com/{{ site.contact.facebook }}" target="_blank">{% include contact/facebook.html %}</a>{% endif %}
-{% if site.contact.linkedin %}<a href="http://linkedin.com/company/{{ site.contact.linkedin }}" target="_blank">{% include contact/linkedin.html %}</a>{% endif %}
-{% if site.contact.twitter %}<a href="http://twitter.com/{{ site.contact.twitter }}" target="_blank">{% include contact/twitter.html %}</a>{% endif %}    
+{% if site.contact.email %}<span class="email"><a href="mailto:{{ site.contact.email }}" >{{ site.contact.email }}</a></span>{% endif %}
