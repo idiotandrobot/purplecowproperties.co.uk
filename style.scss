@@ -250,6 +250,8 @@ nav {
 .contact {
   float: right;
   color: $purple;
+  background-color: $darkGray;
+  padding: 5px; 
   
   @include mobile {
       float: none;
