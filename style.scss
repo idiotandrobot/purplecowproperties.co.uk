@@ -172,7 +172,7 @@ header {
 
 .header a {
     text-transform: uppercase;
-    font-size: 14px;
+}
 
 .wrapper-masthead {
   margin-bottom: 5px;
@@ -256,14 +256,12 @@ nav {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
   }
 
   a {
     margin-left: 20px;
     color: $lighterGray;
     text-align: right;
-    font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
@@ -358,7 +356,6 @@ nav {
     border-top: 1px solid #eee;
     padding-top: 10px;
     padding-bottom: 10px;
-    
 }
 
 .testimonial h3 {
