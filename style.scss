@@ -184,6 +184,7 @@ header {
   text-align: left;
   
   @include mobile {
+    padding: 5px 0;
     text-align: center;
   }
 }
@@ -191,7 +192,7 @@ header {
 .site-avatar {
   float: left;
   width: 125px;
-  height: 80px;
+  height: 85px;
   margin-right: 15px;
 
   @include mobile {
@@ -205,9 +206,9 @@ header {
   }
 }
 // Height hack to fix avatar/info spacing glitch
-@media screen and (max-width: 358px) {
+@media screen and (max-width: 276px) {
   .site-avatar {
-    height: 30px;
+    height: 65px;
   }
 }
 
