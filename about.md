@@ -3,11 +3,13 @@ layout: page
 title: about us
 permalink: /about/
 categories: [home, about]
-excerpt: Purple Cow Properties was created through the dynamic partnership of an experienced Property Investor and a proactive Manchester based Lettings Manager.
+excerpt: 
+	Purple Cow Properties was created through the dynamic partnership of an experienced Property Investor and a proactive Manchester based Lettings Manager.
 
-We provide a Fully Managed Property Service for residential landlords throughout the Greater Manchester area. Purple Cow Properties believes in a personal approach and in partnering with Property Investors to ensure a more efficient and creative solution to Letting and Managing your property.
+	We provide a Fully Managed Property Service for residential landlords throughout the Greater Manchester area. Purple Cow Properties believes in a personal approach and in partnering with Property Investors to ensure a more efficient and creative solution to Letting and Managing your property.
 ---
 {{ excerpt }}
+
 > Purple Cow Properties' ethos is to represent the financial interests of the property owner for both the long and short term; whilst also meeting the requirements of your tenants and ensuring the smooth management of your portfolio.
 
 ### Trust... ###
