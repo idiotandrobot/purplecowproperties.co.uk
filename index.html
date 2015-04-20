@@ -25,18 +25,17 @@
               </article>
             {% endif %}
           {% endfor %}
-          <article class="testimonials">    
-            <h1><a href="{{ site.baseurl }}testimonials/">testimonials</a></h1>
             {% for testimonial in site.testimonials %}
               {% if testimonial.categories contains 'home' %}
+                <article class="page">    
                   <div class="entry">
                     {{ testimonial.content }}
                   </div>
                   <h3>{{ testimonial.title }}</h3>             
+                  <a href="{{ site.baseurl }}testimonials" class="read-more">Read More</a>
+                </article>
               {% endif %}
             {% endfor %}
-            <a href="{{ site.baseurl }}testimonials/" class="read-more">Read More</a>
-          </article>
         </div>
       </div>
     
