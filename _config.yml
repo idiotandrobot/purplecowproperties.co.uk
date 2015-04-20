@@ -16,8 +16,6 @@ url: http://purplecowproper.com/
 
 baseurl: ""
 
-excerpt_separator: <!--more-->
-
 collections:
   testimonials:
     output: true
