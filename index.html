@@ -17,18 +17,17 @@
           {% for page in site.pages %}
             {% if page.categories contains 'home' %}
               <article class="page">    
-                <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
+                <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
                 <div class="entry">
-                  {{ page.excerpt }}                 
-                </div>
-                <a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Read More</a>
+                  {{ page.excerpt }} <a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Read More</a>
+                </div>               
               </article>
             {% endif %}
           {% endfor %}
             {% for testimonial in site.testimonials %}
               {% if testimonial.categories contains 'home' %}
                 <article class="testimonial">    
-                  <h1><a href="{{ site.baseurl }}testimonials">testimonials</a></h1>
+                  <h2><a href="{{ site.baseurl }}testimonials">testimonials</a></h2>
                   <div class="entry">
                     {{ testimonial.content }}
                     <h3>{{ testimonial.title }}</h3>             
