@@ -27,7 +27,7 @@
           {% endfor %}
             {% for testimonial in site.testimonials %}
               {% if testimonial.categories contains 'home' %}
-                <article class="page">    
+                <article class="testimonial">    
                   <h1><a href="{{ site.baseurl }}testimonials">testimonials</a></h1>
                   <div class="entry">
                     {{ testimonial.content }}
