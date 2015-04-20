@@ -19,12 +19,24 @@
               <article class="page">    
                 <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
                 <div class="entry">
-                  {{ page.content | truncatewords:40}}
+                  page.excerpt
                   <a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Read More</a>
                 </div>
               </article>
             {% endif %}
           {% endfor %}
+          <article class="testimonials">    
+            <h1><a href="{{ site.baseurl }}testimonials/">testimonials</a></h1>
+            {% for testimonial in site.testimonials %}
+              {% if testimonial.categories contains 'home' %}
+                  <div class="entry">
+                    {{ testimonial.content }}
+                  </div>
+                  <h3>{{ testimonial.title }}</h3>             
+              {% endif %}
+            {% endfor %}
+            <a href="{{ site.baseurl }}testimonials/" class="read-more">Read More</a>
+          </article>
         </div>
       </div>
     
