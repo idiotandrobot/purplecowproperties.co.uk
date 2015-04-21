@@ -314,6 +314,55 @@ nav {
   margin-right: 10px;  
 }
 
+.excerpt {
+    width: 250px;
+    min-height: 400px;
+    float: left;
+    border-right: 1px solid white;
+    margin: 5px;
+    background-color: #333;
+    background-color: rgba(6, 6, 6, 0.5);
+    align-content: center;
+}
+@media screen and (max-width: 850px) {
+    .excerpt {
+        float: none;
+        width: auto;
+        height:auto;
+        min-height: inherit;
+        border-right: none;
+    }
+}
+
+.excerpt h2 {
+    text-transform: capitalize;
+}
+
+.excerpt img {
+    margin: 4px 50px;
+}
+@media screen and (max-width: 850px) {
+    .excerpt img {
+        display: none;
+    }
+}
+
+.excerpt .entry {
+    color: #ddd;
+    margin: 6px;
+    letter-spacing: 1px;   
+}
+
+.read-more:before { 
+  font: 10px FontAwesome;
+  vertical-align: sub;
+  content: "\f141";
+}
+
+.excerpt .read-more {
+    font-weight: bold;    
+}
+
 .menu-home .home,
 .menu-home .about,
 .menu-home .services,
@@ -351,15 +400,6 @@ nav {
     padding: 1px;
 
   }
-}
-
-.read-more {
-    
-}
-
-.read-more:before { 
-  font: 1.2em FontAwesome;
-  content: "\f141";
 }
 
 .testimonial {   
