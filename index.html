@@ -14,22 +14,24 @@
 
       <div id="main" role="main" class="container">
         <div class="pages">
+          {% assign excerpt_count = 1 %}
           {% for page in site.pages %}
             {% if page.categories contains 'home' %}
               <article class="excerpt">    
                 <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
-                <img src="images/{{ page.name }}-link.png" />
+                <img src="images/excerpt{{ excerpt_count }}.png" />
                 <div class="entry">
                   {{ page.excerpt }}<a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Read More</a>
                 </div>               
               </article>
+              {% increment menu_count %}
             {% endif %}
           {% endfor %}
             {% for testimonial in site.testimonials %}
               {% if testimonial.categories contains 'home' %}
                 <article class="excerpt">    
                   <h2><a href="{{ site.baseurl }}testimonials">testimonials</a></h2>
-                  <img src="images/testimonials-link.png" />
+                  <img src="images/excerpt{{ excerpt_count }}.png" />
                   <div class="entry">
                     <blockquote><p>{{ testimonial.excerpt }}<a href="{{ site.baseurl }}testimonials" class="read-more">Read More</a></p></blockquote>
                   </div>                 
