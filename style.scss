@@ -354,7 +354,12 @@ nav {
 }
 
 .read-more {
-    text-align: right;
+    
+}
+
+.read-more:before { 
+  font: 1.2em FontAwesome;
+  content: "\f141";
 }
 
 .testimonial {   
