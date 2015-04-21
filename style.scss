@@ -21,30 +21,6 @@ body {
   color: $lightGray;
 }
 
-.background { 
-  background:url(../images/background-default.jpg) no-repeat; 
-  margin: 0 auto;
-  max-width: 1455px;
-  padding: 0 10px;
-  width: 100%;
-}
-
-.background-home { 
-  background:url(../images/background-home.jpg) no-repeat; 
-  margin: 0 auto;
-  max-width: 1455px;
-  min-height: 566px;
-  padding: 0 10px;
-  width: 100%;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 0 10px;
-  width: 100%;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $lighterGray;
@@ -173,6 +149,31 @@ header {
 .header a {
     text-transform: uppercase;
 }
+
+.background { 
+  background:url(../images/background-default.jpg) no-repeat; 
+  margin: 0 auto;
+  max-width: 1455px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.background-home { 
+  background:url(../images/background-home.jpg) no-repeat; 
+  margin: 0 auto;
+  max-width: 1455px;
+  min-height: 566px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 10px;
+  width: 100%;
+}
+
 
 .wrapper-masthead {
   margin-bottom: 5px;
@@ -335,7 +336,6 @@ nav {
 }
 
 .excerpt h2 {
-    text-transform: capitalize;
     margin: 5px;    
 }
 
@@ -362,45 +362,6 @@ nav {
 
 .excerpt .read-more {
     font-weight: bold;    
-}
-
-.menu-home .home,
-.menu-home .about,
-.menu-home .services,
-.menu-home .testimonials {
-    display: inline-block;
-    width: 365px;
-    height: 180px;
-    padding: 0 10px;   
-    font-size: 18px;
-    text-transform: capitalize;
-}
-@media screen and (max-width: 800px) {
-  .menu-home .home,
-  .menu-home .about,
-  .menu-home .services,
-  .menu-home .testimonials  { 
-    width: 165px;
-    height: 140px;
-    padding: 1px;
-  }
-}
-
-.menu-home .home { background: url(../images/home-link.png) no-repeat; }
-.menu-home .about { background: url(../images/about-link.png) no-repeat; }
-.menu-home .services { background: url(../images/services-link.png) no-repeat; }
-.menu-home .testimonials { background: url(../images/testimonials-link.png) no-repeat; }
-@media screen and (max-width: 395px) {
-  .menu-home .home,
-  .menu-home .about,
-  .menu-home .services,
-  .menu-home .testimonials  { 
-    background: none;
-    width: 120px;
-    height: 60px;
-    padding: 1px;
-
-  }
 }
 
 .testimonial {   
