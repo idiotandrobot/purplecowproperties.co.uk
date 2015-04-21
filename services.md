@@ -8,7 +8,7 @@ excerpt: Purple Cow Properties is a residential Lettings and Property Management
 ---
 {{ page.excerpt }}
 
-![](../images/{{ page.avatar }}-small.png) Property Management in Manchester should comprise of more then just site visits and fielding phone calls from tenants; at Purple Cow our property management includes Property Investment Advice, BMV Property Investment Leads and access to our Property Investment Tutorials.
+Property Management in Manchester should comprise of more then just site visits and fielding phone calls from tenants; at Purple Cow our property management includes Property Investment Advice, BMV Property Investment Leads and access to our Property Investment Tutorials.
 
 > Finding a Letting Agent in Manchester can be easily done with a walk down Deansgate; but if you are interested in a Property Partnership with experienced Property Investors and a Property Management Company who understand the current Manchester Property Market then contact us......
 > 
