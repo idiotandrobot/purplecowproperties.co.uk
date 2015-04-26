@@ -1,6 +1,6 @@
 ---
 layout: page
-title: our services
+title: Our Services
 permalink: /services/
 categories: [home, services]
 avatar: huronbasin

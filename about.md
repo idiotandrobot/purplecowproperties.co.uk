@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about us
+title: About Us
 permalink: /about/
 categories: [home, about]
 avatar: textiles 
