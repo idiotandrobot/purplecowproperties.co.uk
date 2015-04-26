@@ -14,29 +14,24 @@
 
       <div id="main" role="main" class="container">
         <div class="pages">
-          {% for page in site.pages %}
-            {% if page.categories contains 'home' %}
-              <article class="excerpt">    
-                <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
-                <img src="images/{{ page.avatar }}-small.png" />
-                <div class="entry">
-                  {{ page.excerpt }}<a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Read More</a>
-                </div>               
-              </article>
-              
-            {% endif %}
-          {% endfor %}
-            {% for testimonial in site.testimonials %}
-              {% if testimonial.categories contains 'home' %}
-                <article class="excerpt">    
-                  <h2><a href="{{ site.baseurl }}testimonials">testimonials</a></h2>
-                  <img src="images/sunset-small.png" />
-                  <div class="entry">
-                    <blockquote><p>{{ testimonial.excerpt }}<a href="{{ site.baseurl }}testimonials" class="read-more">Read More</a></p></blockquote>
-                  </div>                 
-                </article>
-              {% endif %}
-            {% endfor %}
+{% for page in site.pages %}{% if page.categories contains 'home' %}
+          <article class="excerpt">    
+            <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
+            <img src="images/{{ page.avatar }}-small.png" />
+            <div class="entry">
+              {{ page.excerpt }}<a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Read More</a>
+            </div>               
+          </article>
+{% endif %}{% endfor %}
+{% for testimonial in site.testimonials %}{% if testimonial.categories contains 'home' %}
+          <article class="excerpt">    
+            <h2><a href="{{ site.baseurl }}testimonials">testimonials</a></h2>
+            <img src="images/sunset-small.png" />
+            <div class="entry">
+              <blockquote><p>{{ testimonial.excerpt }}<a href="{{ site.baseurl }}testimonials" class="read-more">Read More</a></p></blockquote>
+            </div>                 
+          </article>
+{% endif %}{% endfor %}
         </div>
       </div>
     

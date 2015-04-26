@@ -7,9 +7,7 @@
 	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
   <link rel="shortcut icon" href="{{ site.baseurl }}/images/icon.jpg">
 
-	{% capture description %}
-		{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
-	{% endcapture %}
+{% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
 	<meta name="description" content="{{ description }}">
   
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
