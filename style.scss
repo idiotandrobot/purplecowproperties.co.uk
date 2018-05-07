@@ -140,7 +140,7 @@ blockquote:after {
 .wrapper-header {
   border-top: 1px solid $lighterGray;
   border-bottom: 1px solid $lighterGray;
-  background-color: $purple;
+  background-color: $darkGray;
 }
 
 header {
@@ -379,11 +379,11 @@ nav {
 .wrapper-footer {
   border-top: 1px solid $lighterGray;
   border-bottom: 1px solid $lighterGray;
-  background-color: $purple;
+  background-color: $darkGray;
 }
 
 footer {
-  padding: 10px 0;
+  padding: 6px 0;
   text-align: center;
 }
 
