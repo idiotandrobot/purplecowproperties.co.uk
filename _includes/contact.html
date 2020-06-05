@@ -1,4 +1,38 @@
+<script type="text/javascript">
+  function decode(encodedString) {
+    var decoded = ""; 
+    var keyInHex = encodedString.substr(0, 2);
+    var key = parseInt(keyInHex, 16);
+    for (var n = 2; n < encodedString.length; n += 2) {
+        var charInHex = encodedString.substr(n, 2)
+        var char = parseInt(charInHex, 16);
+        var output = char ^ key;
+        decoded += String.fromCharCode(output);
+    }
+    return decoded;
+  }
+  function updateEml(el) {
+    var encoded = el.innerHTML;
+    var decoded = decode(encoded);
+    el.textContent = decoded;
+    el.href = 'mailto:' + decoded;
+  }
+  function updateTel(el) {
+    var encoded = el.innerHTML;
+    var decoded = decode(encoded);
+    el.textContent = decoded;
+  }
+  var allElements = document.getElementsByClassName("phone");
+  for (var i = 0; i < allElements.length; i++) {
+    updateTel(allElements[i])
+  }
+  var allElements = document.getElementsByClassName("eml");
+  for (var i = 0; i < allElements.length; i++) {
+    updateEml(allElements[i])
+  }
+}
+</script>
 <div class="contact">
   {% if site.contact.phone %}<div class="phone">{{ site.contact.phone }}</div>{% endif %}
-  {% if site.contact.email %}<div class="email"><a href="mailto:{{ site.contact.email }}" >{{ site.contact.email }}</a></div>{% endif %}
+  {% if site.contact.email %}<div class="email"><a class="eml-protected" href="#">{{ site.contact.email }}</a></div>{% endif %}
 </div>
