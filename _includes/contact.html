@@ -1,15 +1,11 @@
 <script type="text/javascript">
-  function decode(encodedString) {
-    var decoded = ""; 
-    var keyInHex = encodedString.substr(0, 2);
-    var key = parseInt(keyInHex, 16);
-    for (var n = 2; n < encodedString.length; n += 2) {
-        var charInHex = encodedString.substr(n, 2)
-        var char = parseInt(charInHex, 16);
-        var output = char ^ key;
-        decoded += String.fromCharCode(output);
-    }
-    return decoded;
+    var allElements = document.getElementsByClassName("phone");
+  for (var i = 0; i < allElements.length; i++) {
+    updateTel(allElements[i])
+  }
+  var allElements = document.getElementsByClassName("eml");
+  for (var i = 0; i < allElements.length; i++) {
+    updateEml(allElements[i])
   }
   function updateEml(el) {
     var encoded = el.innerHTML;
@@ -22,13 +18,17 @@
     var decoded = decode(encoded);
     el.innerHTML = decoded;
   }
-  var allElements = document.getElementsByClassName("phone");
-  for (var i = 0; i < allElements.length; i++) {
-    updateTel(allElements[i])
-  }
-  var allElements = document.getElementsByClassName("eml");
-  for (var i = 0; i < allElements.length; i++) {
-    updateEml(allElements[i])
+  function decode(encodedString) {
+    var decoded = ""; 
+    var keyInHex = encodedString.substr(0, 2);
+    var key = parseInt(keyInHex, 16);
+    for (var n = 2; n < encodedString.length; n += 2) {
+        var charInHex = encodedString.substr(n, 2)
+        var char = parseInt(charInHex, 16);
+        var output = char ^ key;
+        decoded += String.fromCharCode(output);
+    }
+    return decoded;
   }
 </script>
 <div class="contact">
