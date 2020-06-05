@@ -1,5 +1,9 @@
+<div class="contact">
+  {% if site.contact.phone %}<div class="phone">{{ site.contact.phone }}</div>{% endif %}
+  {% if site.contact.email %}<div class="email"><a class="eml" href="#">{{ site.contact.email }}</a></div>{% endif %}
+</div>
 <script type="text/javascript">
-    var allElements = document.getElementsByClassName("phone");
+  var allElements = document.getElementsByClassName("phone");
   for (var i = 0; i < allElements.length; i++) {
     updateTel(allElements[i])
   }
@@ -31,7 +35,3 @@
     return decoded;
   }
 </script>
-<div class="contact">
-  {% if site.contact.phone %}<div class="phone">{{ site.contact.phone }}</div>{% endif %}
-  {% if site.contact.email %}<div class="email"><a class="eml" href="#">{{ site.contact.email }}</a></div>{% endif %}
-</div>
